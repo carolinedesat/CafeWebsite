@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+   <section name="drinks">
+      <entry>
+         <item>Club Orange</item>
+         <price>€3.20</price>
+      </entry>
+      <entry>
+         <item>Club Lemon</item>
+         <price>€3.20</price>
+      </entry>
+      <entry>
+         <item vegetarian="true">Sparkling Water</item>
+         <price>€3.00</price>
+      </entry>
+   </section>
+   <section name="sides">
+      <entry>
+         <item>Soup of the Day</item>
+         <price>€8.50</price>
+      </entry>
+      <entry>
+         <item>Caesar Salad</item>
+         <price>€9.00</price>
+      </entry>
+      <entry vegetarian="true">
+         <item>Potato Skins</item>
+         <price>€9.00</price>
+      </entry>
+   </section>
+   <section name="breakfast">
+      <entry>
+         <item>Pancakes</item>
+         <price>€11.00</price>
+      </entry>
+      <entry>
+         <item>Waffles</item>
+         <price>€11.00</price>
+      </entry>
+      <entry vegetarian="true">
+         <item>Carrot Cake</item>
+         <price>€4.50</price>
+      </entry>
+   </section>
+   <section name="lunch">
+      <entry>
+         <item>Beef Burger</item>
+         <price>€16.50</price>
+      </entry>
+      <entry>
+         <item>Chicken Burger</item>
+         <price>€15.50</price>
+      </entry>
+      <entry vegetarian="true">
+         <item>Falafel Burger</item>
+         <price>€16.00</price>
+      </entry>
+   </section>
+   <section name="dinner">
+      <entry>
+         <item>Fish and Chips</item>
+         <price>€17.50</price>
+      </entry>
+      <entry>
+         <item>Beef Stew</item>
+         <price>€18.50</price>
+      </entry>
+      <entry vegetarian="true">
+         <item>Vegetarian Curry</item>
+         <price>€17.00</price>
+      </entry>
+   </section>
+</menu>
