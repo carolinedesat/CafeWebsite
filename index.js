@@ -6,27 +6,36 @@ const   http = require('http'), //this module provides the HTTP server functiona
         xsltParse = require('xslt-processor').xsltProcess, //the same module allows us to utilise XSL Transformations
         xml2js = require('xml2js'); //this module does XML <-> JSON conversion
 
-const   router = express();
+const   router = express(), 
         server = http.createServer(router);
+
+router.use(express.static(path.resolve(__dirname,'views'))); //we serve static content from "views" folder
 
 router.get('/', function(req, res) {
 
     res.writeHead(200, {'Content-Type' : 'text/html'});
 
-    let xml = fs.readFileSync('PaddysCafe.xml', 'utf8');
+    let xml = fs.readFileSync('PaddysCafe.xml', 'utf8'),
         xsl = fs.readFileSync('PaddysCafe.xsl', 'utf8');
+
+    console.log(xml);
+    console.log(xsl);
 
     let doc = xmlParse(xml),
         stylesheet = xmlParse(xsl);
 
+    console.log(doc);
+    console.log(stylesheet);
+
     let result = xsltProcess(doc, stylesheet);
+
+    console.log(result);
 
     res.end(result.toString());
 
 });
 
-server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function()
-{
+server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function() {
     const addr = server.address();
     console.log("Server listening at", addr.address + ":" + addr.port)
 });
