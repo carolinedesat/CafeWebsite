@@ -1,0 +1,19 @@
+{
+  "name": "ssp-proj",
+  "version": "0.0.1",
+  "description": "practical class work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolinedesat/ssp-practical.git"
+  },
+  "author": "Caroline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolinedesat/ssp-practical/issues"
+  },
+  "homepage": "https://github.com/carolinedesat/ssp-practical#readme"
+}
